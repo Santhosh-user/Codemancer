@@ -39,7 +39,7 @@ export const GiphySearch = () =>{
                     limit: 1,
                  }
                 })
-                console.log(results)
+                console.log(results, "trending")
                 setgifResults(results.data.data)
                 setisLoading(false)
             }
@@ -51,6 +51,15 @@ export const GiphySearch = () =>{
             console.log(content, "content")
         }
 
+        
+        const appendImage = () =>{
+            {
+                return ( <div>
+                    <img src={content} alt="" />
+                </div> )
+            }  
+        }
+
         //to render images for the search query
 
         const renderGifs = () =>{
@@ -60,22 +69,13 @@ export const GiphySearch = () =>{
             return gifResults.map(e=>{
                 return ( <div>
                             <div key = {e.id} className="gif" >
-                             <div onClick={pushImage}> <img className="individual-img" src={e.images.fixed_height.url} alt="" />
-                          </div> 
-                          </div>
-                          </div>
+                                 <div onClick={pushImage}> <img className="individual-img" src={e.images.fixed_height.url} alt="" /></div> 
+                            </div>
+                            </div>
                 )
             })
-            
         }
 
-        const appendImage = () =>{
-            {
-                return ( <div>
-                    <img src={content} alt="" />
-                </div> )
-            }  
-        }
 
         const disp = () =>{
             {
@@ -111,7 +111,6 @@ export const GiphySearch = () =>{
         const handleChange = (e) =>{
             setisLoading(true)
             debounce(()=>{
-            
                 axios.get("https://api.giphy.com/v1/gifs/search", {
                 params:{
                     api_key: "BjARaKrdtIJIubjjklkQoN3hupj2CYLi",
@@ -120,6 +119,7 @@ export const GiphySearch = () =>{
             }).then(function(response){
                 console.log(response.data.data)
                 setgifResults(response.data.data)
+                console.log(response, "gifresults")
                 setisLoading(false)
             })
             },600)
