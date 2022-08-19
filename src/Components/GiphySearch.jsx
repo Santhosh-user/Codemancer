@@ -34,8 +34,7 @@ export const GiphySearch = () =>{
         setisLoading(true)
          axios.get("https://api.giphy.com/v1/gifs/trending", {
             params:{
-                api_key: "BjARaKrdtIJIubjjklkQoN3hupj2CYLi", 
-                limit: 1,
+                api_key: "BjARaKrdtIJIubjjklkQoN3hupj2CYLi"
              }
             }).then(function(response){
                 setgifResults(response.data.data)
