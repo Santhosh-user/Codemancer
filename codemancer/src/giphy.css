@@ -1,0 +1,316 @@
+.container{
+    width: 25%;
+    height: auto;
+    margin: auto;
+    border: 1px solid lightgrey;
+    align-items: center;
+    justify-content: center;
+}
+
+
+[contenteditable] {
+    border: none;
+    outline: none;
+    max-height: 200px;
+    overflow: auto;
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 14px;
+    
+}
+
+[contentEditable=true]:empty:not(:focus)::before{
+    content:attr(data-ph)
+}
+
+/* [contentEditable="true"]:empty:not(:focus):before {
+    content: attr(data-ph)
+  } */
+
+  /* [contentEditable="true"]:empty::before {
+    content: attr(data-ph)
+  } */
+
+
+/* 
+[data-placeholder]:before:empty{
+    content: attr(data-placeholder);
+    color: #888;
+    font-style: italic;
+  } */
+
+
+.three-sections{
+    display: flex;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: 
+    #e7ecf1;
+    padding-bottom: 4px;
+}
+
+.single-section{
+    display: flex;
+    /* padding-right: 20px; */
+}
+
+.single-section p {
+    padding-right: 5px;
+    margin: 0px;
+    font-size: 10px;
+    padding-left: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual-logo{
+    width: 14px;
+    height: 12px;
+   
+}
+
+.videocam-logo{
+    width: 14px;
+    height: 10px;
+    padding-top: 1px;
+}
+
+.pencil-logo{
+    width: 12px;
+    height: 12px;
+    padding-top: 1px;
+
+}
+
+.container-gifs{
+    padding-top: 10px;
+    margin: 0px;
+    height: 200px;
+    scrollbar-width: thin;
+}
+
+.vertical-line{
+
+        border-left: 2px solid grey;
+        height: 10px;
+        width: 4px;
+        padding-top: 1px;
+        padding-left: 3px;
+}
+
+.input-area{
+    display: flex;
+    padding-top: 20px;
+}
+
+.profile-pic{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.profile-pic img{
+    width: 50px;
+    height: 50px;
+}
+
+.status-options{
+    padding-top: 40px;
+    padding-left: 10px;
+    margin: auto;
+    height: 60px;
+    text-align: center;
+}
+
+.status-options div{
+    text-align: center;
+    height: 20px;
+}
+
+.status-options div{
+   font-size: 12px;
+  
+
+}
+
+.first-row{
+    display: flex;
+    margin-bottom: 3%;
+ 
+}
+
+
+.second-row{
+    display: flex;
+}
+
+.tag-friends{
+    width: 47%;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: white;
+    background-color: 
+    #e7ecf1;
+    padding-top: 3px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.check-in{
+    width: 47%;
+    border-radius: 10px;
+    border: white;
+    background-color: 
+    #e7ecf1;
+    padding-top: 3px;
+    display: flex;
+    
+}
+
+.GIF{
+    width: 47%;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: white;
+    background-color: 
+    #e7ecf1;
+    padding-top: 3px;
+    display: flex;
+}
+
+.tag-event{
+    width: 47%;
+    border-radius: 10px;
+    border: white;
+    background-color: 
+    #e7ecf1;
+    padding-top: 3px;
+    display: flex;
+}
+
+.popup{
+    width: 250px;
+    background-color: 
+    #e7ecf1;
+    border: 1px ;
+    height: auto;
+    margin-left: 10px;
+    box-shadow: 2px 2px rgb(217, 229, 233);
+    overflow: scroll;
+    margin-top: -5px;
+    overflow-x: hidden;
+    position: absolute;;
+}
+
+
+.arrow{
+  
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid white;
+    border-right: 0px solid red;
+    border-bottom: 0px solid red;
+    border-left: 2px solid white;
+    content: "";
+    transform: rotate(45deg);
+    margin-left: 10%;
+    background-color: #e7ecf1;
+}
+
+
+.individual-img{
+    width: 230px;
+    height: 200px;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.input{
+    /* margin-top: 4%;
+    margin-bottom: 2%; */
+    width: 220px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    position: sticky;
+    margin-top: 7px;
+    
+    
+}
+
+.disp-container{
+    
+    width: 230px;
+    scrollbar-width: thin;
+
+}
+
+/* .container::-webkit-scrollbar{
+    width:5px;
+    background-color:#000;
+    } */
+
+    .popup::-webkit-scrollbar{
+        width:5px;
+        background-color:#e7ecf1;
+        height: 5px;
+    }
+
+    .popup::-webkit-scrollbar-thumb{
+        width: 5px;
+        background: rgb(204, 198, 198);
+        height: 20px;
+    }
+
+    .main-container{
+        width: 25%;
+        border: 1px solid blue;
+    }
+
+    
+
+    .giflogo{
+        width: 15px;
+        padding-left: 15px;
+        padding-top: 3px;
+        padding-right: 8px;
+    }
+
+    .taglogo{
+        width: 15px;
+        padding-left: 15px;
+        padding-top: 3px;
+        padding-right: 8px;
+    }
+
+    .locationlogo{
+        width: 15px;
+        height: 15px;
+        padding-left: 15px;
+        padding-top: 1px;
+        padding-right: 8px;
+    }
+
+    .eventlogo{
+        width: 15px;
+        height: 15px;
+        padding-left: 15px;
+        padding-top: 1px;
+        padding-right: 8px;
+    }
+    
+
+
+
+/* add images
+make center
+make top bigger
+see other changes
+corer */
