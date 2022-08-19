@@ -29,20 +29,23 @@ export const GiphySearch = () =>{
     const [toggle, setToggle] = useState(false)
 
     //to fetch tending gifs and display here
+    const fetchData = () =>{
+            
+        setisLoading(true)
+         axios.get("https://api.giphy.com/v1/gifs/trending", {
+            params:{
+                api_key: "BjARaKrdtIJIubjjklkQoN3hupj2CYLi", 
+                limit: 1,
+             }
+            }).then(function(response){
+                setgifResults(response.data.data)
+                
+                setisLoading(false)
+            }).catch(function(response){console.log(response.error)})
+        }
 
     useEffect(()=>{
-        const fetchData = async() =>{
-            setisLoading(true)
-              const results =  await axios("https:api.giphy.com/v1/gifs/trending", {
-                params:{
-                    api_key: "BjARaKrdtIJIubjjklkQoN3hupj2CYLi", 
-                    limit: 1,
-                 }
-                })
-                console.log(results, "trending")
-                setgifResults(results.data.data)
-                setisLoading(false)
-            }
+     
             fetchData()
         }, [])
 
@@ -66,15 +69,20 @@ export const GiphySearch = () =>{
             if(isloading){
                 return <Loading></Loading>
             }  
+            if(gifResults.length<=0){
+               return(
+                fetchData()
+               ) 
+            }
             return gifResults.map(e=>{
                 return ( <div>
                             <div key = {e.id} className="gif" >
                                  <div onClick={pushImage}> <img className="individual-img" src={e.images.fixed_height.url} alt="" /></div> 
                             </div>
                             </div>
-                )
-            })
-        }
+                        )
+                    })
+                }
 
 
         const disp = () =>{
