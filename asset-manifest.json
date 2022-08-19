@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.961f5e4a.css",
-    "main.js": "/static/js/main.d2409ae4.js",
-    "static/js/787.80e3acca.chunk.js": "/static/js/787.80e3acca.chunk.js",
-    "static/media/locationlogo.jpg": "/static/media/locationlogo.937f2efd809ad9f83687.jpg",
-    "static/media/photo.jpg": "/static/media/photo.c643295a1782ccde1835.jpg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.961f5e4a.css.map": "/static/css/main.961f5e4a.css.map",
-    "main.d2409ae4.js.map": "/static/js/main.d2409ae4.js.map",
-    "787.80e3acca.chunk.js.map": "/static/js/787.80e3acca.chunk.js.map"
+    "main.css": "/codemancer/static/css/main.961f5e4a.css",
+    "main.js": "/codemancer/static/js/main.95201f51.js",
+    "static/js/787.80e3acca.chunk.js": "/codemancer/static/js/787.80e3acca.chunk.js",
+    "static/media/locationlogo.jpg": "/codemancer/static/media/locationlogo.937f2efd809ad9f83687.jpg",
+    "static/media/photo.jpg": "/codemancer/static/media/photo.c643295a1782ccde1835.jpg",
+    "static/media/logo.svg": "/codemancer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/codemancer/index.html",
+    "main.961f5e4a.css.map": "/codemancer/static/css/main.961f5e4a.css.map",
+    "main.95201f51.js.map": "/codemancer/static/js/main.95201f51.js.map",
+    "787.80e3acca.chunk.js.map": "/codemancer/static/js/787.80e3acca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.961f5e4a.css",
-    "static/js/main.d2409ae4.js"
+    "static/js/main.95201f51.js"
   ]
 }
