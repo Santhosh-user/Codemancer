@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Codemancer/static/css/main.961f5e4a.css",
-    "main.js": "/Codemancer/static/js/main.564ac1ff.js",
+    "main.js": "/Codemancer/static/js/main.c9b69d01.js",
     "static/js/787.80e3acca.chunk.js": "/Codemancer/static/js/787.80e3acca.chunk.js",
     "static/media/locationlogo.jpg": "/Codemancer/static/media/locationlogo.937f2efd809ad9f83687.jpg",
     "static/media/photo.jpg": "/Codemancer/static/media/photo.c643295a1782ccde1835.jpg",
     "static/media/logo.svg": "/Codemancer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Codemancer/index.html",
     "main.961f5e4a.css.map": "/Codemancer/static/css/main.961f5e4a.css.map",
-    "main.564ac1ff.js.map": "/Codemancer/static/js/main.564ac1ff.js.map",
+    "main.c9b69d01.js.map": "/Codemancer/static/js/main.c9b69d01.js.map",
     "787.80e3acca.chunk.js.map": "/Codemancer/static/js/787.80e3acca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.961f5e4a.css",
-    "static/js/main.564ac1ff.js"
+    "static/js/main.c9b69d01.js"
   ]
 }
